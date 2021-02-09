@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "jest --coverage=true"
+    "start": "node src/server.js",
+    "test:unit": "jest --coverage=true",
+    "test:module": "node tests/api/runner.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "newman": "^5.2.2"
   }
 }
