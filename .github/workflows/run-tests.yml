@@ -1,8 +1,7 @@
-name: Sample's Github Action
+name: run-tests
 
 on:
-  pull_request:
-  push:
+  [pull_request, push]
 
 jobs:
   test:
