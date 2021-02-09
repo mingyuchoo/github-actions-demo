@@ -3,9 +3,6 @@ name: Sample's Github Action
 on:
   pull_request:
   push:
-    branches:
-      - main
-      - develop
 
 jobs:
   test:
