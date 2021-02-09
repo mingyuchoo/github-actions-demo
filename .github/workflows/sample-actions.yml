@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Running Unit Tests
+    name: Running Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,5 +19,7 @@ jobs:
           node-version: 12
       - name: Install
         run: npm install
-      - name: Test
-        run: npm test
+      - name: Unit Test
+        run: npm run test:unit
+      - name: Module Test
+        run: npm run test:module
