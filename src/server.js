@@ -15,7 +15,11 @@ let users = {
   3: {
     id: "3",
     username: "Robert Downey JR."
-  }
+  },
+  4: {
+    id: "4",
+    username: "Choo"
+  },
 };
 
 app.get("/", (_req, res) => {
