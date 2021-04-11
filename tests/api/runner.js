@@ -1,6 +1,6 @@
 const { TestScheduler } = require("jest");
 var newman = require("newman");
-var http = require("../../src/server");
+var server = require("../../src/server");
 
 newman
   .run({
@@ -12,5 +12,5 @@ newman
   })
   .on("done", function (err, summary) {
     console.log(">>> done");
-    http.close();
+    server.close();
   });

@@ -14,11 +14,11 @@ let users = {
   },
   3: {
     id: "3",
-    username: "Robert Downey JR."
+    username: "Robert Downey JR.",
   },
   4: {
     id: "4",
-    username: "Choo"
+    username: "Choo",
   },
 };
 
@@ -46,7 +46,7 @@ app.get("/users/:userId", (req, res) => {
   return res.send(users[req.params.userId]);
 });
 
-http = require("http").createServer(app);
-http.listen(port);
+server = require("http").createServer(app);
+server.listen(port);
 
-module.exports = http;
+module.exports = server;
