@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/server.js",
     "test:unit": "jest --coverage=true",
-    "test:module": "node tests/api/runner.js"
+    "test:module": "node tests/api/runner.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "jest": "^27.0.6",
-    "newman": "^5.2.4"
+    "newman": "^5.2.4",
+    "husky": "^7.0.1"
   }
 }
